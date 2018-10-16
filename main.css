@@ -10,12 +10,33 @@ html {
 
 body {
   background-color: #b4d3d3;
+  margin: auto 0;
+  font-size: 1rem;
 }
-body .images {
+
+.images {
   text-align: center;
   background-color: #4b1e2c;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  width: 100%;
 }
-body .images img {
+.images img {
+  width: 50%;
+  height: auto;
+  margin: 2%;
+}
+
+.dimages {
+  text-align: center;
+  background-color: #1e2f33;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  width: 100%;
+}
+.dimages img {
+  width: 50%;
+  height: auto;
   margin: 2%;
 }
 
@@ -25,33 +46,37 @@ body .images img {
 
 nav {
   background-color: #2f4d51;
+  color: white;
   width: 100%;
-  height: 50px;
+  margin-bottom: 3%;
+  padding: 1rem;
+  display: inline-block;
   text-align: center;
-  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
 }
 nav ul {
   list-style-type: none;
   margin: 5px;
-  padding: 0.5rem;
 }
-nav li {
-  text-align: center;
+nav ul li {
+  padding-bottom: 1rem;
 }
-nav a {
-  float: left;
-  width: 20%;
-  margin-top: 10px;
+nav ul li a {
   text-decoration: none;
+  font-size: 1rem;
+  font-family: sans-serif;
   color: white;
 }
 
 h1 {
+  font-family: "OrangeBlossoms";
   text-align: center;
   font-size: 4rem;
 }
 
 p {
+  font-family: "Arial Narrow", Arial, sans-serif;
+  font-weight: normal;
+  font-size: 1.2rem;
   padding: 1rem;
 }
 
@@ -65,21 +90,13 @@ p {
   background-color: #1e2f33;
   text-align: center;
   margin-top: 40px;
+  width: 100%;
 }
 .homepagepics img {
-  margin: 40px 130px 40px 40px;
-}
-
-.column {
-  float: left;
-  width: 50%;
-  padding: 1rem;
-}
-
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  width: 55%;
+  height: auto;
 }
 
 footer {
@@ -103,6 +120,7 @@ footer {
   font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
 }
 .footernav li a {
+  text-decoration: none;
   margin-top: 10px;
   color: white;
 }
@@ -116,33 +134,48 @@ footer {
 }
 
 .aboutimg {
+  width: auto;
   background-color: #2f4d51;
-  padding: 1rem;
+  padding: 0.5rem;
   text-align: center;
 }
 .aboutimg img {
+  width: 50%;
+  height: auto;
   padding: 1rem;
   margin: 2rem;
   background-color: #003039;
 }
 
 .aboutimg2 {
-  padding: 1rem;
+  width: auto;
+  padding: 0.5rem;
   text-align: center;
 }
 .aboutimg2 img {
+  width: 50%;
+  height: auto;
   padding: 1rem;
   margin: 2rem;
   background-color: #003039;
 }
 
 form {
-  background-color: #1e2f33;
-  width: 50%;
+  background-color: #2f4d51;
+  border: none;
   font-family: sans-serif;
   color: white;
-  margin: 1rem;
-  padding-bottom: 6rem;
+  margin: auto;
+  padding: 1rem;
+  width: 98%;
+  align-self: center;
+}
+
+fieldset {
+  border: none;
+  width: 100%;
+  padding: 0;
+  margin: 0;
 }
 
 input[type=text],
@@ -151,24 +184,22 @@ textarea {
   width: 100%;
 }
 
+/* SUBMIT BUTTON*/
 input[type=submit] {
-  background-color: #2f4d51;
+  background-color: #1e2f33;
   color: white;
-  display: flex;
-  display: block;
-  max-width: 300px;
-  margin: auto;
-  padding: 15px;
+  height: 50px;
   width: 200px;
   border: none;
   cursor: pointer;
-  float: left;
 }
 
 .buttons {
   padding: 10px 0 10px 4px;
+  margin: 0px auto;
 }
 
+/* SUBMIT HOVER */
 input[type=submit]:hover {
   background-color: white;
   color: black;
@@ -185,65 +216,153 @@ textarea {
   padding: 0.5rem;
 }
 
-input {
-  text-align: center;
-}
-
-fieldset {
-  border: none;
-}
-
 fieldset:nth-child(4) input {
   width: auto;
 }
 
-/*GOOGLE MAP*/
+/*MAP*/
+.map-wrapper {
+  padding: 2rem;
+}
+
 iframe {
-  width: calc(100% - 1rem);
-  height: 400px;
-  margin: 1rem;
+  background-color: #003039;
   padding: 1rem;
+  width: 100%;
   display: block;
-  margin-left: auto;
-  margin-right: auto;
 }
 
-/*CONTACT PAGE COLUMNS*/
-.contact_column {
-  float: left;
+.pvimages {
+  text-align: center;
+  background-color: #1e2f33;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  width: 100%;
+}
+.pvimages img {
   width: 50%;
+  height: auto;
+  margin: 2%;
 }
 
-.contact_page_columns:after {
-  content: "";
-  display: table;
-  clear: both;
+.videorow p {
+  text-align: center;
+  font-size: 2rem;
+}
+.videorow .columnvideo {
+  padding: 1rem;
+  margin: 0 auto;
+}
+.videorow .columnvideo iframe {
+  width: 100%;
+  height: 500px;
 }
 
-.background img {
-  display: block;
-  margin: 1rem auto;
-}
+@media all and (min-width: 60rem) {
+  nav {
+    background-color: #2f4d51;
+    color: white;
+    width: 100%;
+    margin-bottom: 3%;
+    padding: 1rem;
+    text-align: center;
+    width: 100%;
+    height: 60px;
+    float: left;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  }
+  nav ul li {
+    float: left;
+    width: 20%;
+  }
 
-.allimages {
-  background-color: #1e2f33;
-  padding: 2rem;
-  margin: 50px;
-}
-.allimages .image {
-  float: left;
-  width: 33.33%;
-  padding: 2rem;
-}
+  .images {
+    float: left;
+  }
+  .images img {
+    width: 25%;
+  }
 
-.allimages::after {
-  content: "";
-  clear: both;
-  display: table;
-}
+  .homepagepics {
+    float: left;
+  }
+  .homepagepics img {
+    padding: 1rem;
+    width: 40%;
+  }
 
-.design {
-  background-color: #1e2f33;
+  .column {
+    float: left;
+    width: 50%;
+    padding: 1rem;
+  }
+
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  .aboutimg img {
+    width: 40%;
+  }
+
+  .aboutimg2 img {
+    width: 40%;
+  }
+
+  .pvimages {
+    float: left;
+  }
+  .pvimages img {
+    width: 25%;
+  }
+
+  .columnvideo {
+    float: left;
+    width: 50%;
+    padding: 1rem;
+  }
+
+  .videorow:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  .design .dimages {
+    float: left;
+  }
+  .design .dimages img {
+    padding-top: 5rem;
+    width: 45%;
+  }
+
+  .contact_column {
+    float: left;
+    width: 50%;
+  }
+
+  .contact_page_columns:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  .contact_column {
+    float: left;
+    width: 50%;
+  }
+
+  .contact_page_columns:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  .map-wrapper {
+    padding-top: 0;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
